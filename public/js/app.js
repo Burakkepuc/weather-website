@@ -1,5 +1,3 @@
-console.log('Client side js file is loaded!');
-
 
 let url;
 const weatherForm = document.querySelector('form')
@@ -15,7 +13,6 @@ weatherForm.addEventListener('submit', (e) =>{
   messageTwo.textContent = ' '
   e.preventDefault()
   const location = search.value
-  console.log(location)
 
   url = `http://localhost:3000/weather?address=${encodeURIComponent(location)}`;
   
